@@ -42,10 +42,12 @@ Now you have to write this code at bottom of body tag inside script
 
 ### For prefilled dropdown you have to changes a little bit
 1) in country select dropdown 
-	## add dependent-state-id="state_id2" dependent-city-id="city_id2" selected-value="101"
+	# dependent-state-id="state_id2" dependent-city-id="city_id2" selected-value="101"
 2) in state select dropdown 
-	## add dependent-city-id="city_id2" selected-value="5"
+	# add dependent-city-id="city_id2" selected-value="5"
 3) in city select dropdown
-	## add selected-value="459"
+	# selected-value="459"
+	### Note:- dependent-state-id should be unique id of state select drop down and same is apply on dependent-city-id  and selected-value should be the value of state, country, or city. what ever you want
 
 ### Thank You, Done.
+for demo https://absharalam.github.io/country-state-city-plugin/
