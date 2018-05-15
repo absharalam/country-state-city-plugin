@@ -1,22 +1,37 @@
-## Welcome to GitHub Pages
+## Welcome to Jquery Country-State-City-Plugin
 
-You can use the [editor on GitHub](https://github.com/absharalam/country-state-city-plugin/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+THis plugin solve problem of country state city dropdown with simple implementation.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You can use this plugin in any application.
 
-### Markdown
+### Implementation Step
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1) copy below script at the bottom of you body tag
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  // this is jquery plugin
+<script type="text/javascript" src="countrystatecity.min.js"></script> // this is our country-state-city-plugin
+
+2) changes in HTML select option code
+ 
+  <select name="p_country" element-id="country" dependent-state-id="state_id1" dependent-city-id="city_id1" id="country_id1"  class="countrystatecity">
+					<option value="">select country</option>
+	</select>
+  
+  <select name="p_state" element-id="state" dependent-city-id="city_id1" id="state_id1" id="state_id1" class="countrystatecity">
+					<option value="">select</option>
+	</select>
+  
+  <select name="p_city" element-id="city" id="city_id1" class="countrystatecity">
+					<option value="">select</option>
+	</select>
+  
+  ## Important Notes:- You must specify the "element-id" attribute to each select option and each select element has class "countrystatecity"
+        for country element-id = "country"
+            state element-id = "state"
+            city element-id = "city"
+        define class="countrystatecity" for each element
+        ### each element should have one unique id. id should be any thing but unique.
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
 
 1. Numbered
 2. List
