@@ -20,16 +20,8 @@ You can use this plugin in any application.
 	example:- 
 	<select name="p_country" element-id="country" dependent-state-id="state_id1" dependent-city-id="city_id1" id="country_id1"  class="countrystatecity">
 					<option value="">select country</option>
-	</select>
-  
-  <select name="p_state" element-id="state" dependent-city-id="city_id1" id="state_id1" id="state_id1" class="countrystatecity">
-					<option value="">select</option>
-	</select>
-  
-  <select name="p_city" element-id="city" id="city_id1" class="countrystatecity">
-					<option value="">select</option>
-	</select>
-```markdown
+	</select><select name="p_state" element-id="state" dependent-city-id="city_id1" id="state_id1" id="state_id1" class="countrystatecity"><option value="">select</option></select> <select name="p_city" element-id="city" id="city_id1" class="countrystatecity"><option value="">select</option></select>
+	#### Note:- dependent-state-id should be unique id of state select drop down and same is apply on dependent-city-id  
 
 Now you have to write this code at bottom of body tag inside script
 
@@ -40,12 +32,12 @@ Now you have to write this code at bottom of body tag inside script
 
 ### For prefilled dropdown you have to changes a little bit
 1) in country select dropdown 
-	# dependent-state-id="state_id2" dependent-city-id="city_id2" selected-value="101"
+	# selected-value="101"
 2) in state select dropdown 
-	# dependent-city-id="city_id2" selected-value="5"
+	# selected-value="5"
 3) in city select dropdown
 	# selected-value="459"
-	### Note:- dependent-state-id should be unique id of state select drop down and same is apply on dependent-city-id  and selected-value should be the value of state, country, or city. what ever you want
+	## Note:- selected-value should be the value of state, country, or city. what ever you want
 
 ### Thank You, Done.
 for demo https://absharalam.github.io/country-state-city-plugin/
